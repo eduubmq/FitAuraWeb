@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - FIT AURA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-side nav-left"></div> 
+        <div class="nav-center">
+            <a href="index.html">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA Logo" class="logo">
+            </a>
+        </div>
+        <div class="nav-side nav-right">
+            <nav>
+                <a href="productos.html">Productos</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="aplicacion.html">Aplicación</a>
+                <a href="https://notebooklm.google.com/notebook/1a202533-34b2-4acc-ba76-eec06b1f2f01?authuser=1" target="_blank">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page-pdf">
+        <section class="pdf-section animate-load">
+            <h1>Nuestra Historia</h1>
+            <div class="pdf-container">
+                <embed src="assets/FIT AURA pdf.pdf" type="application/pdf" width="100%" height="800px" />
+            </div>
+        </section>
+
+        <section class="team-section reveal-scale">
+            <div class="team-image-container">
+                <img src="assets/equipo.png" alt="Equipo FIT AURA" class="team-img">
+            </div>
+        </section>
+
+        <section class="feed-section reveal-scale">
+            <div class="feed-image-container">
+                <img src="assets/feed.png" alt="Atletas FIT AURA" class="feed-img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA" class="footer-logo">
+                <p class="brand-name">Fit Aura</p>
+                <p class="copyright">© 2025 FIT AURA. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Acerca de</h4>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Presentación</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter/X</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-scale').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

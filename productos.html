@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - FIT AURA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-side nav-left"></div> 
+        <div class="nav-center">
+            <a href="index.html">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA Logo" class="logo">
+            </a>
+        </div>
+        <div class="nav-side nav-right">
+            <nav>
+                <a href="productos.html">Productos</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="aplicacion.html">Aplicación</a>
+                <a href="https://notebooklm.google.com/notebook/1a202533-34b2-4acc-ba76-eec06b1f2f01?authuser=1" target="_blank">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pricing-page">
+        <section class="pricing-hero animate-load">
+            <h1>Elige tu AURA</h1>
+            <p>La tecnología más avanzada para tu rendimiento deportivo.</p>
+        </section>
+
+        <section class="pricing-grid">
+            
+            <div class="pricing-card reveal-scale">
+                <span class="plan-tag">ONE</span>
+                <p class="price">199€</p>
+                <div class="card-img-wrap">
+                    <img src="assets/suscripcion1.png" alt="AURA ONE" class="card-img">
+                </div>
+                <p class="card-desc">Datos de fitness de nivel profesional a nuestro mejor precio.</p>
+                <hr>
+                <ul class="features">
+                    <li>Aura 1.0 con más de 14 días de batería.</li>
+                    <li>Información sobre sueño y recuperación.</li>
+                    <li>Coaching personalizado.</li>
+                </ul>
+                <div class="card-buttons">
+                    <a href="#" class="btn-subscribe">Subscribe</a>
+                </div>
+            </div>
+
+            <div class="pricing-card reveal-scale delay-1">
+                <span class="plan-tag">PEAK</span>
+                <p class="price">264€</p>
+                <div class="card-img-wrap">
+                    <img src="assets/suscripcion2.png" alt="AURA PEAK" class="card-img">
+                </div>
+                <p class="card-desc">Información avanzada de salud, fitness y longevidad.</p>
+                <hr>
+                <ul class="features">
+                    <li>Aura 2.0 con más de 14 días de batería.</li>
+                    <li>Healthspan y Ritmo de envejecimiento.</li>
+                    <li>Monitor de salud con alertas.</li>
+                </ul>
+                <div class="card-buttons">
+                    <a href="#" class="btn-subscribe">Subscribe</a>
+                </div>
+            </div>
+
+            <div class="pricing-card reveal-scale delay-2">
+                <span class="plan-tag">LIFE</span>
+                <p class="price">399€</p>
+                <div class="card-img-wrap">
+                    <img src="assets/suscripcion3.png" alt="AURA 3.0" class="card-img">
+                </div>
+                <p class="card-desc">Nuestra tecnología más potente con información médica.</p>
+                <hr>
+                <ul class="features">
+                    <li>AURA 3.0 con más de 14 días de batería.</li>
+                    <li>Examinador cardíaco con lecturas de ECG.</li>
+                    <li>Notificaciones de arritmias.</li>
+                </ul>
+                <div class="card-buttons">
+                    <a href="#" class="btn-subscribe">Subscribe</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA" class="footer-logo">
+                <p class="brand-name">Fit Aura</p>
+                <p class="copyright">© 2025 FIT AURA. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Acerca de</h4>
+                <ul>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter/X</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-scale').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

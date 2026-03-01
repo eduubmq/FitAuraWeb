@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación - FIT AURA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-side nav-left"></div> 
+        <div class="nav-center">
+            <a href="index.html">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA Logo" class="logo">
+            </a>
+        </div>
+        <div class="nav-side nav-right">
+            <nav>
+                <a href="productos.html">Productos</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="aplicacion.html">Aplicación</a>
+                <a href="https://notebooklm.google.com/notebook/1a202533-34b2-4acc-ba76-eec06b1f2f01?authuser=1" target="_blank">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-page">
+        <section class="app-hero animate-load">
+            <h1>Tu salud en tu mano</h1>
+            <p>Descarga la nueva aplicación de FIT AURA y toma el control total de tu rendimiento.</p>
+            <div class="app-buttons">
+                <a href="assets/APP FITAURA.zip" class="btn-hero" download>Descargar App</a>
+            </div>
+        </section>
+
+        <section class="app-preview reveal-scale">
+            <div class="image-container-app">
+                <img src="assets/aplicacion.png" alt="FIT AURA App Preview" class="app-img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA" class="footer-logo">
+                <p class="brand-name">Fit Aura</p>
+                <p class="copyright">© 2025 FIT AURA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal-scale').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT AURA - Potencia tu Rendimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-side nav-left"></div> 
+        <div class="nav-center">
+            <a href="index.html">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA Logo" class="logo">
+            </a>
+        </div>
+        <div class="nav-side nav-right">
+            <nav>
+                <a href="productos.html">Productos</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="aplicacion.html">Aplicación</a>
+                <a href="https://notebooklm.google.com/notebook/1a202533-34b2-4acc-ba76-eec06b1f2f01?authuser=1" target="_blank">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="animate-load">POTENCIA TU RENDIMIENTO.<br>TRANSFORMA TU SALUD.</h1>
+            <p class="animate-load delay-1">La nueva generación de wearables inteligentes para deportistas.</p>
+            <div class="animate-load delay-2">
+                <a href="sobre-nosotros.html" class="btn-hero">Sobre Nosotros</a>
+            </div>
+        </section>
+
+        <section class="promo-section reveal-scale">
+            <div class="image-container">
+                <img src="assets/fitaura-x-cr7.png" alt="Fitaura x CR7 Collaboration" class="promo-img">
+            </div>
+        </section>
+
+        <section class="featured-product" id="productos">
+            <div class="featured-container">
+                <div class="product-image-side reveal-left">
+                    <img src="assets/fit-aura-pulsera.jpg" alt="AURA 3.0 Wearable" class="product-img-featured">
+                </div>
+                <div class="product-text-side reveal-right">
+                    <h2>Descubre la nueva AURA 3.0</h2>
+                    <p>Diseñada para deportistas de élite. Monitoriza tu salud, descanso, recuperación y rendimiento deportivo con precisión científica.</p>
+                    <a href="productos.html" class="btn-more">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section reveal-scale" id="contacto">
+            <div class="contact-container">
+                <h2>Contacta con nosotros</h2>
+                <form class="contact-form" action="https://formspree.io/f/mlgwkwlw" method="POST">
+                    <div class="form-group">
+                        <label>Nombre (obligatorio)</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos (obligatorio)</label>
+                        <input type="text" name="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico (obligatorio)</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Contáctanos</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column brand-col">
+                <img src="assets/Letras FITAURA.png" alt="FIT AURA" class="footer-logo">
+                <p class="brand-name">Fit Aura</p>
+                <p class="copyright">© 2025 FIT AURA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal-left, .reveal-right, .reveal-scale').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
